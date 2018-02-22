@@ -21,7 +21,7 @@ let array = [10, 20, 30, 20, 30, 40, 60];
 
 // escribe tu funcion
 const computeSumOfAllElements = array => {
-    suma = 0;
+    let suma = 0;
     for (let element of array) {
         suma += element
         result = suma / array.length;
