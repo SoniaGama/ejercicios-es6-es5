@@ -1,21 +1,29 @@
-                        // ES5
+// ES5
 
 
 // 1.1- Mostrar en la consola un mensaje que diga... "El numero de generaciones es (numero de generaciones en total)"
+const generations = laboratoria => {
+    for (let key in laboratoria) {
+        let element = Object.keys(laboratoria[key]).length;
+        console.log(`El numero de generaciones es ${element}`);
+    }
+}
 
-
-
-
-
-
+generations(laboratoria);
 
 
 // 1.2- Mostrar en la consola un mensaje que diga ... "La (numero de generacion) tuvo (numero de alumnas en esa generacion) alumnas" [Un mensaje por cada generacion]
+// const numberOfStudentsByGeneration = laboratoria => {
+//     let obj
+//     let gen;
+//     let students;
+//     for (let key in laboratoria) {
+//         obj = laboratoria[key];                 
+//     }     
+// }
 
 
-
-
-
+// numberOfStudentsByGeneration(laboratoria);
 
 
 // 1.3- Mostrar en la consola un mensaje que diga "El promedio de edad de la (numero de generacion) generacion es de (promedio de numero de alumas en la generacion)" [un mensaje por generacion]
@@ -36,7 +44,7 @@
 
 
 
-                                  
+
 // Alcance 2... 
 
 

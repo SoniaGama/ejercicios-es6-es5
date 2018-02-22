@@ -39,18 +39,17 @@ const inventory = [
 
 const totalByCategory = (inventory, category) => {
   const filterCategory = prod => {
-    const totalProd = prod.category === category;
-    // console.log(totalProd);    
+    const totalProd = prod.category === category; 
     return totalProd;
   };
   const sumInventory = (prodAnterior, prodActual) => {
-    // const base = `${prodAnterior}` + `${parseInt(prodActual.stock, 10)}`;
-    // const base = prodAnterior + parseInt(prodActual.stock, 10);//revisar!!!!!!!!!!!
-    // console.log(base);    
+    // const base = `${prodAnterior + parseInt(prodActual.stock, 10)}`;
+    const base = prodAnterior + parseInt(prodActual.stock, 10);
+    console.log(base);    
     return base;
   };
   const filtrando = inventory.filter(filterCategory).reduce(sumInventory, 0);
-  console.log(filtrando);  
+  // console.log(filtrando);  
   return filtrando;
 };
 totalByCategory(inventory, "beverage");
